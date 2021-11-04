@@ -10,19 +10,20 @@ namespace Homework
     {
         static void Main(string[] args)
         {
-            string textForExit;
+            const string textForExit = "exit";
+            string userText;
 
-            while(true)
+            Console.WriteLine("Введите любой текст для запустка цыкла \n");
+            userText = Console.ReadLine();
+            Console.WriteLine("\nЦыкл успешно запущен ");
+
+            while (userText != textForExit)
             {
-                Console.WriteLine("\nДля завершения цыкла введите \"exit\". \n");
-                textForExit = Console.ReadLine();
-                if (textForExit == "exit")
-                {
-                    break;
-                }
+                Console.WriteLine("\nДля завершения цыкла введите \"" + textForExit + "\". \n");
+                userText = Console.ReadLine();
             }
 
-            Console.WriteLine("Цыкл успешно завершен.");
+            Console.WriteLine("\nЦыкл успешно завершен.");
 
             Console.ReadKey();
         }
