@@ -10,7 +10,10 @@ namespace Homework
     {
         static void Main(string[] args)
         {
-            string name, age, gender, fafavoriteDish;
+            string name;
+            string age;
+            string gender;
+            string fafavoriteDish;
 
             Console.Write("Ввведите свое имя: ");
             name = Console.ReadLine();
