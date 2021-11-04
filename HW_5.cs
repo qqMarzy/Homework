@@ -13,8 +13,8 @@ namespace Homework
             const int timeForOnePerson = 10;
             int peopleInLine;
             int waitingTime;
-            int hours;
-            int minutes;
+            int waitingTimeHours;
+            int waitingTimeMinutes;
 
             Console.WriteLine("Вы вошли в поликлинику и видите огромную очередь из старушек.\n");
             Console.Write("Сколько старушек вы видите перед собой? - ");
@@ -23,7 +23,7 @@ namespace Homework
             Console.WriteLine("\nВ поликлинике на одного клиента выделяется ровно " + timeForOnePerson + " минут\n");
             hours = waitingTime / 60;
             minutes = waitingTime % 60;
-            Console.WriteLine("До вашей очереди осталось - " + hour + " часа и " + minutes + " минут");
+            Console.WriteLine("До вашей очереди осталось - " + waitingTimeHours + " часа и " + waitingTimeMinutes + " минут");
 
             Console.ReadKey();
         }
