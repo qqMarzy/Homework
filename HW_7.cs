@@ -11,7 +11,7 @@ namespace Homework
         static void Main(string[] args)
         {
             string text;
-            int counter;
+            int numberOfRepetitions;
 
             Console.Write("Введите свой текст: ");
             text = Console.ReadLine();
