@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Homework
 {
-    class Task4
+    class Task5
     {
         static void Main(string[] args)
         {
             const int timeForOnePerson = 10;
             int peopleInLine;
-            int time;
+            int waitingTime;
             int hours;
             int minutes;
 
@@ -21,8 +21,8 @@ namespace Homework
             peopleInLine = Convert.ToInt32(Console.ReadLine());
             time = peopleInLine * timeForOnePerson;
             Console.WriteLine("\nВ поликлинике на одного клиента выделяется ровно " + timeForOnePerson + " минут\n");
-            hours = time / 60;
-            minutes = time % 60;
+            hours = waitingTime / 60;
+            minutes = waitingTime % 60;
             Console.WriteLine("До вашей очереди осталось - " + hour + " часа и " + minutes + " минут");
 
             Console.ReadKey();
