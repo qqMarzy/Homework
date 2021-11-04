@@ -18,7 +18,7 @@ namespace Homework
             Console.Write("\nВведите сколько раз должеж вывестись ваш текст: ");
             counter = Convert.ToInt32(Console.ReadLine());
 
-            for (int i = 0; i < counter; i++)
+            for (int i = 0; i < numberOfRepetitions; i++)
             {
                 Console.WriteLine(text);
             }
