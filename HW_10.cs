@@ -17,7 +17,6 @@ namespace Homework
             int randomNumber;
             int randomNumberMax;
             int randomNumberMin;
-
             Console.WriteLine("Добро пожаловать.\nДля выхода введите \"" + textForExit + "\"\n");
             while (userText != textForExit)
             {
