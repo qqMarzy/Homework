@@ -11,11 +11,12 @@ namespace Homework
         static void Main(string[] args)
         {
             const string password = "Anime";
+            const int countOfAttempts = 3;
             string userText = "";
 
             Console.WriteLine("Введите пароль:");
 
-            for (int i = 0; i < 3 && userText != password; i++)
+            for (int i = 0; i < countOfAttempts && userText != password; i++)
             {
                 userText = Console.ReadLine();
 
