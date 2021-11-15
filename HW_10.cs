@@ -10,14 +10,16 @@ namespace Homework
     {
         static void Main(string[] args)
         {
-            int factor = 2;
+            int factor = 7;
             int multiplicand = 7;
             int maxValue = 98;
 
-            for (int i = multiplicand; i < maxValue; i *= factor)
+            for (int i = multiplicand; i <= maxValue; i += factor)
             {
                 Console.WriteLine(i);
             }
+
+            Console.ReadKey();
         }
     }
 }
