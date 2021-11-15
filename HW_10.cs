@@ -17,13 +17,17 @@ namespace Homework
             int randomNumber;
             int randomNumberMax;
             int randomNumberMin;
+
             Console.WriteLine("Добро пожаловать.\nДля выхода введите \"" + textForExit + "\"\n");
+
             while (userText != textForExit)
             {
                 if (password.Length > 0)
                 {
                     Console.WriteLine("Введите пароль: ");
+
                     userText = Console.ReadLine();
+
                     if (userText == password)
                     {
                         Console.WriteLine("\nПравильный пароль");
@@ -40,6 +44,7 @@ namespace Homework
                         continue;
                     }
                 }
+
                 Console.WriteLine("\nВыберите операцию: ");
                 Console.WriteLine("SetTextColor - изменить цвет текста консоли.");
                 Console.WriteLine("SetBackgroundColor - изменить цвет фона консоли.");
@@ -49,6 +54,7 @@ namespace Homework
                 Console.WriteLine("Clear - очистить консоль.");
                 Console.WriteLine("\nExit - выход из консоли.");
                 userText = Console.ReadLine();
+
                 switch (userText)
                 {
                     case "SetTextColor":
@@ -59,6 +65,7 @@ namespace Homework
                         Console.WriteLine("Green - Зеленый.");
                         Console.WriteLine("Black - Чёрный.");
                         userText = Console.ReadLine();
+
                         switch(userText)
                         {
                             case "White":
@@ -77,6 +84,7 @@ namespace Homework
                                 Console.ForegroundColor = ConsoleColor.Black;
                                 break;
                         }
+
                         Console.Clear();
                         break;
                     case "SetBackgroundColor":
@@ -87,6 +95,7 @@ namespace Homework
                         Console.WriteLine("Green - Зеленый.");
                         Console.WriteLine("Black - Чёрный.");
                         userText = Console.ReadLine();
+
                         switch (userText)
                         {
                             case "White":
@@ -105,6 +114,7 @@ namespace Homework
                                 Console.BackgroundColor = ConsoleColor.Black;
                                 break;
                         }
+
                         Console.Clear();
                         break;
                     case "SetPassword":
